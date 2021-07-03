@@ -10,7 +10,7 @@ int main(void) {
 
 	printf("\nWhat is your name?\n> ");
 	scanf("%s", s);
-	printf("Hello, %s!\n\n");
+	printf("Hello, %s!\n\n", s);
 
 	printf("Rolling the dice...\n");
 	printf("Die 1: %d\n", d1);
@@ -18,11 +18,11 @@ int main(void) {
 	printf("Total value: %d\n", d1 + d2);
 
 	if (d1 + d2 > 7) {
-		printf("You won!\n");
+		printf("%s won!\n", s);
 	}
 	else 
 	{
-		printf("You lost!\n");
+		printf("%s lost!\n", s);
 	}
 
 	return 0;
